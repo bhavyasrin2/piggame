@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="piggame.css" />
+    <title>PIG GAME</title>
+  </head>
+  <body>
+    <div class="textdisplay">
+         Player1 wins
+    </div> 
+    <div class="play-game button-editing">
+      <i class="fa fa-refresh" style="font-size: 24px"></i>
+      <span class="text">play/reset</spam>
+    </div>
+    <div class="image">
+      <img src="diceimages/dice1.png" style="width:100px ;height:100px"/>
+    </div>
+    <div class="dice-roll button-editing" onclick="rolldice()">
+      <i class="fas fa-dice" style="font-size: 24px"></i>
+      <span class="text">roll dice</span>
+    </div>
+    <div class="hold button-editing" onclick="hold()">
+      <i class="fa fa-pause" style="font-size: 24px"></i>
+      <span class="text">hold</span>
+    </div>
+    <div class="game">
+      <div class="box" id="player1">
+        <div class="playerbox box-sizing" >
+          <div class="playername">Player 1</div>
+          <div class="score" id="s1">0</div>
+        </div>
+        <div class="box-sizing">
+          <div class="currentbox">
+            <div class="currenttext">Current Score</div>
+            <div class="currentscore" id="c1">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="player2">
+        <div class="playerbox box-sizing">
+          <div class="playername">Player 2</div>
+          <div class="score" id="s2">0</div>
+        </div>
+        <div class="box-sizing">
+          <div class="currentbox">
+            <div class="currenttext">Current Score</div>
+            <div class="currentscore" id="c2">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="piggame.js"></script>
+</html>
